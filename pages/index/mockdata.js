@@ -4,7 +4,7 @@ export default {
   code: "ok",
   data: [{
       id: 'table001',
-      name: '基础工资',
+      name: '资产',
       value: null,
       children: [{
           id: 'table0011',
@@ -40,7 +40,7 @@ export default {
     },
     {
       id: 'table002',
-      name: '加班工资',
+      name: '负债',
       value: null,
       children: [{
           id: 'table0021',
@@ -55,20 +55,6 @@ export default {
           children: []
         },
       ]
-    },
-    {
-      id: 'table003',
-      name: '岗位工资',
-      value: 1800.0,
-      children: [
-
-      ]
-    },
-    {
-      id: 'table004',
-      name: '合计',
-      value: 8600.0,
-      children: []
     },
   ]
 }

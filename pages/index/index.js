@@ -6,13 +6,13 @@ import {
 Page({
   data: {
     currentDate: '',
-    username: '张三',
+    username: 'User',
     list: ''
   },
   
   onLoad: function () {
     wx.setNavigationBarTitle({
-      title: '工资查询',
+      title: '负债资产表查询',
     })
     //设置当前年月
     this.setCurrentDate()

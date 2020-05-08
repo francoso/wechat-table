@@ -13,6 +13,7 @@
     <view class='nodata' wx:if='{{list.length === 0}}'>本月暂无工资数据</view>
     <view class='row1' wx:if='{{list.length > 0}}' wx:for='{{list}}' wx:key='{{item.id}}'>
       <text class='text'>{{item.name}}</text>
+    </view>
       <view class='column2-wrapper'>
         <view class='column-value' wx:if='{{item.value}}'>{{item.value}}</view>
         <view class='column2' wx:if='{{item.children.length > 0}}' wx:for='{{item.children}}' wx:for-item='item2' wx:key='{{item2.id}}'>
@@ -29,5 +30,4 @@
         </view>
       </view>
     </view>
-  </view>
 </view>
