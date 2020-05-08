@@ -1,16 +1,16 @@
 <view class='container'>
-  <picker class='picker' mode='date' fields='month' bindchange='dateChange'>
+  <view class='picker' mode='date' fields='month' bindchange='dateChange'>
     <view class='picker-content'>
-      <image class='date-icon' src='../../assets/date_48.png'></image>
+      最后一次更新的时间：<image class='date-icon' src='../../assets/date_48.png'></image>
       <view class='date-text'>{{currentDate}}</view>
     </view>
-  </picker>
+  </view>
   <view class='title-wrapper'>
-    <text class='title'>{{username + " 老师 " + currentDate + " 月工资表"}}</text>
+    <text class='title'>{{username + "的" + " 负债资产表"}}</text>
     <text class='yuan'>单位：元</text>
   </view>
   <view class='table-wrapper'>
-    <view class='nodata' wx:if='{{list.length === 0}}'>本月暂无工资数据</view>
+  <!--<view class='nodata' wxview:if='{{list.length === 0}}'>本月暂无工资数据</view>!-->
     <view class='row1' wx:if='{{list.length > 0}}' wx:for='{{list}}' wx:key='{{item.id}}'>
       <text class='text'>{{item.name}}</text>
       <view class='column2-wrapper'>

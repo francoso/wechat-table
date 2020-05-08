@@ -22,7 +22,7 @@ Page({
   setCurrentDate(){
     //获取当前年月
     let date = new Date()
-    let fmtDate = formatTime(date).substring(0, 7)
+    let fmtDate = formatTime(date).substring(0, 10)
     this.setData({
       currentDate: fmtDate,
     })
