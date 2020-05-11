@@ -57,7 +57,13 @@
   float:center
 }
 
-
+.row2-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 3;
+  justify-content: center;
+  border-left: 1rpx solid #DCDFE6;
+}
 .text {
   flex: 1;
   padding: 10rpx;
@@ -74,7 +80,22 @@
   border-left: 1rpx solid #DCDFE6;
 }
 
+
+.row2-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 3;
+  justify-content: center;
+  border-left: 1rpx solid #DCDFE6;
+}
+
 .column2 {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-bottom: 1rpx solid #DCDFE6;
+}
+.row2 {
   display: flex;
   flex: 1;
   align-items: center;
